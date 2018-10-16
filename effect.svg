@@ -1,0 +1,71 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="100%" height="100%" version="1.1"
+     onload="recursiveNetworkEffect(evt)">
+    <script type='text/javascript'>
+        <![CDATA[
+        function networkEffect(x, y) {
+            var steps = 30;
+            var radiusStep = 40 / steps;
+
+            function animateBubble(b) {
+                var frameLength = 30;
+                var distance = (50 + Math.random() * 150) / (2 * steps);
+                var travelX = Math.random() * 2 - 1;
+                var travelY = Math.random() * 2 - 1;
+
+                for (var i = 1; i < steps * 2; ++i) {
+                    setTimeout((function (i) {
+                        return function () {
+                            b.setAttribute("r", (i < steps ? i : 2 * steps - i) * radiusStep);
+                            b.setAttribute("transform", "translate(" +
+                                    (travelX * (i) * distance) + "," +
+                                    (travelY * (i) * distance) + ")"
+                            );
+                        };
+                    })(i), i * frameLength);
+                }
+                setTimeout(function () {
+                    b.parentNode.removeChild(b);
+                }, 2 * steps * frameLength);
+            }
+
+            for (var i = 1; i <= 3; ++i) {
+                var b = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+                b.setAttribute("cx", x);
+                b.setAttribute("cy", y);
+                b.setAttribute("r", 0);
+                b.setAttribute("style", "fill: rgba(0, 0, 0, .1)");
+                document.documentElement.getElementById("effect-container").appendChild(b);
+                animateBubble(b);
+            }
+        }
+
+        function recursiveNetworkEffect() {
+            for (var i = 1; i < Math.random() * 3 + 2; ++i) {
+                networkEffect(
+                        Math.floor(window.innerWidth * 0.8 * (Math.random() + 0.2)),
+                        Math.floor(window.innerHeight * 0.8 * (Math.random() + 0.2))
+                );
+            }
+            setTimeout(recursiveNetworkEffect, Math.random() * 1500 + 1000);
+        }
+        ]]>
+    </script>
+
+    <defs>
+        <pattern id="background-hex" x="0" y="0" width="42" height="64" patternUnits="userSpaceOnUse">
+            <g fill="#fff">
+                <polygon points="0,0 20,0 20,10 0,20"/>
+                <polygon points="22,0 42,0 42,20 22,10"/>
+                <polygon points="1,22 21,12 41,22 41,42 21,52 1,42"/>
+                <polygon points="0,64 20,64 20,54 0,44"/>
+                <polygon points="42,64 42,44 22,54 22,64"/>
+            </g>
+        </pattern>
+    </defs>
+
+    <rect fill="#fff" x="0" y="0" width="100%" height="100%"/>
+    <g id="effect-container" style="fill: black;"/>
+    <rect fill="url(#background-hex)" x="0" y="0" width="100%" height="100%"/>
+</svg>

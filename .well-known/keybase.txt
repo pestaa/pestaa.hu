@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/pestaa
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://pestaa.hu
+  * I am pestaa (https://keybase.io/pestaa) on keybase.
+  * I have a public key with fingerprint 106B 70A6 FFF8 CF76 9BF6  AAB4 43CD C1F8 87A6 6674
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101cb0b2639fa9948673ca7834d39303fcf34f647d53be6e86594e92a5382b579d30a",
+            "fingerprint": "106b70a6fff8cf769bf6aab443cdc1f887a66674",
+            "host": "keybase.io",
+            "key_id": "43cdc1f887a66674",
+            "kid": "0101cb0b2639fa9948673ca7834d39303fcf34f647d53be6e86594e92a5382b579d30a",
+            "uid": "3a9c4af8b44321078907dfdbfb45f819",
+            "username": "pestaa"
+        },
+        "revoke": {
+            "sig_ids": [
+                "e257470b3a5f26e699757a781373dd9f77f81328b9bdab4d979395507c4494590f"
+            ]
+        },
+        "service": {
+            "hostname": "pestaa.hu",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1456296306,
+    "expire_in": 157680000,
+    "prev": "b534ac66bbd7f45604f9d3e32e289306ad312449eda1539b4f4bfb2a0e335759",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMJnAnicrZJraBVHGIZPNFU8RRBBiz/EZg0WbTjs7txPhaoUivbUG15QYw8zOzM5
+2+jZ091NrMZrbFoI9QIKAaGNoOCl9Y4UW1qTWiu5idJoFIQaITRSESNCVWh1Ntgf
+gj+dP8N8vN/7PfPO/DZ2ZCpdNv/2kUWHnxRulnW1369LLetZFDZYIpDrrWyDVauG
+N7VGqijO1/rSylq2YzuesIWLAdOcMUgxAR4nFEAJGLCB9jSAGkMiERAKK4oRg4q5
+HAHqCkSYBDa3qiztF2tUWAr9YmxsHRsLYnOstaaeJpgJjTkXEAJPeo6mlHCMMYGm
+sRBESYeBEzxSGT8wNXPID+O9Qv+aueuG7QBnHuSaJoSuYxPKbCK1FFpApKnDEmGk
+wiJfq4y6ZPLj3NpUZYWqPqhVSaqRX2OQIyu7ylIuIpDYAnCkXawwYwQRg+YAAqRk
+mhBjCVwqmJAmE8kIAwwhm3gQMoiYra3VxtvMq/e9YfMko5dmZwp1BqkUBnHgBWtM
+uRDHpSibIMXrS4lunRL5Fw554ReleR7TUa/CyA+KVtYxSi/2E0sHIuwyDGxcZanP
+S36o8n6iQART26xkjqo3lgIByD2MhZBEmyYbapOiAq5yqYkccwkc11xBSe4gwATU
+0AToclsBgAhKQozUZ8XAylKDyWuMpUmtyOO6UFmbfm2rLk+VpVOj3hiRfNtUesy4
+/z/zlT2j/6v85N3R/VPn7pvafOzGnaf+hQcjrlcOLW+L2OzchsWZWV1hbuBI+46R
+pztSb5e3zZtRvXNz55nCngl/9aXOLts87rtTe2HNuePPdPfiL7dER1uuVzUeO9H5
+1sI5fRebDoznre+fr9a9PevKP7oYb/22rfvgpZm73xtonvL4C/FmMOFPOLD0gw+3
+FPtB//Y73fRx9tMc3nfmWcPGS51DH381ePvqvz/jjr/bfzlPV1fuP9R1bkfL3ZPo
+Xm/Y3DRxQ+vvC35sHJhckb78cLBvsKIxl1uxe+U/Ldtadx0+lWmYF06bvuLWrKGe
++2XvXKvYds0b2/T1D0vujtl644+lHT81rd0+P/1oSu/3mUnf0OcU62GO
+=V8vu
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pestaa
+
+==================================================================
+
