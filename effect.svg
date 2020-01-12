@@ -5,7 +5,7 @@
     <script type='text/javascript'>
         <![CDATA[
         function networkEffect(x, y) {
-            var steps = 30;
+            var steps = 40;
             var radiusStep = 40 / steps;
 
             function animateBubble(b) {
@@ -35,7 +35,7 @@
                 b.setAttribute("cx", x);
                 b.setAttribute("cy", y);
                 b.setAttribute("r", 0);
-                b.setAttribute("style", "fill: rgba(0, 0, 0, .1)");
+                b.setAttribute("style", "fill: rgba(245, 153, 61, .15)");
                 document.documentElement.getElementById("effect-container").appendChild(b);
                 animateBubble(b);
             }
@@ -55,7 +55,7 @@
 
     <defs>
         <pattern id="background-hex" x="0" y="0" width="42" height="64" patternUnits="userSpaceOnUse">
-            <g fill="#fff">
+            <g fill="#101010">
                 <polygon points="0,0 20,0 20,10 0,20"/>
                 <polygon points="22,0 42,0 42,20 22,10"/>
                 <polygon points="1,22 21,12 41,22 41,42 21,52 1,42"/>
@@ -65,7 +65,7 @@
         </pattern>
     </defs>
 
-    <rect fill="#fff" x="0" y="0" width="100%" height="100%"/>
+    <rect fill="#101010" x="0" y="0" width="100%" height="100%"/>
     <g id="effect-container" style="fill: black;"/>
     <rect fill="url(#background-hex)" x="0" y="0" width="100%" height="100%"/>
 </svg>
