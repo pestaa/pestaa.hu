@@ -11,14 +11,7 @@
 
 @font-face {
     font-family: 'juice_regularregular';
-    src: url('JUICE_Regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Black Ops One";
-    src: local("Black Ops One"), url("BlackOpsOne-Regular.woff") format("woff");
+    src: url('JUICE_Regular-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
